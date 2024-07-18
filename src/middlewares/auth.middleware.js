@@ -6,8 +6,7 @@ import { User } from "../models/user.models.js";
 
 export const verifyJWT = asyncHandler(async(req, _, next) => {
     try {
-        // const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ", "");
-        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njc4M2NmYmUyMzljNjAyMjQyYzQzNDAiLCJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidmVkYW50X3NvbmFyXyIsImZ1bGxuYW1lIjoiVmVkYW50IFNvbmFyIiwiaWF0IjoxNzIwNTkyODgxLCJleHAiOjE3MjA2NzkyODF9.497Cfgqt4eg5OR0JWoaQZIngpRQqKcSV7skBDKXTjkQ"
+         const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ", "");
         
         // console.log(token);
         
